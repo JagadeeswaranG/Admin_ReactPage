@@ -40,6 +40,12 @@ function User() {
       },
     ]);
   }, []);
+  let deleteProfile=()=>{
+    let confirm=window.confirm("Do you want to delete this profile?")
+    if(confirm){
+      alert("Profile Deleted !")
+    }
+  }
   return (
     <div className="container-fluid">
       <div className="d-sm-flex align-items-center justify-content-between mb-4">
@@ -108,17 +114,26 @@ function User() {
                         <Link
                           to={`/profile/${item.id}`}
                           type="button"
-                          className="btn btn-info"
+                          className="btn btn-info mr-1"
                         >
                           Profile
                         </Link>
                         <Link
                           to={`/edit_user/${item.id}`}
                           type="button"
-                          className="btn btn-warning"
+                          className="btn btn-warning mr-1"
                         >
                           Edit
                         </Link>
+                        <button
+                          onClick={()=>{
+                            deleteProfile()
+                          }}
+                          type="button"
+                          className="btn btn-danger mr-1"
+                        >
+                          Delete
+                        </button>
                       </td>
                     </tr>
                   );
