@@ -5,6 +5,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Dashboard from "./Dashboard";
 import User from "./User";
 import Usercreate from "./Usercreate";
+import "./css/sb-admin-2.css"
+import "./css/fontawesome-free/css/all.min.css"
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Profile from "./Profile";
 import Edituser from "./Edituser";
