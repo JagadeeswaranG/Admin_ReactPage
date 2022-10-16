@@ -20,7 +20,7 @@ function Profile() {
             </div>
           </div>
 
-          <Link to={"/user"} type="button" className="btn btn-primary">
+          <Link to={"/portal/user"} type="button" className="btn btn-primary">
             Back to Users
           </Link>
         </div>

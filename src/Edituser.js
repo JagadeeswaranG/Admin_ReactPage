@@ -87,7 +87,7 @@ function Edituser() {
           <button type="submit" className="btn btn-primary">
             Submit
           </button>
-          <Link to={"/user"} type="button" className="btn btn-primary m-2">Back to Users</Link>
+          <Link to={"/portal/user"} type="button" className="btn btn-primary m-2">Back to Users</Link>
         </div>
       </div>
     </div>

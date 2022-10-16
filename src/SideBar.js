@@ -22,7 +22,7 @@ function SideBar() {
       <hr className="sidebar-divider my-0" />
 
       <li className="nav-item active">
-        <Link className="nav-link" to={"/dashboard"}>
+        <Link className="nav-link" to={"/portal/dashboard"}>
           <i className="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span>
         </Link>
@@ -35,7 +35,7 @@ function SideBar() {
       <li className="nav-item">
         <Link
           className="nav-link collapsed"
-          to={"/user"}
+          to={"/portal/user"}
           data-toggle="collapse"
           data-target="#collapseTwo"
           aria-expanded="true"
@@ -44,22 +44,21 @@ function SideBar() {
           <i className="fas fa-fw fa-cog"></i>
           <span>User</span>
         </Link>
-        <div
-          id="collapseTwo"
-          className="collapse"
-          aria-labelledby="headingTwo"
-          data-parent="#accordionSidebar"
+        
+      </li>
+      <li className="nav-item">
+        <Link
+          className="nav-link collapsed"
+          to={"/portal/product"}
+          data-toggle="collapse"
+          data-target="#collapseTwo"
+          aria-expanded="true"
+          aria-controls="collapseTwo"
         >
-          <div className="bg-white py-2 collapse-inner rounded">
-            <h6 className="collapse-header">Custom Components:</h6>
-            <a className="collapse-item" href="buttons.html">
-              Buttons
-            </a>
-            <a className="collapse-item" href="cards.html">
-              Cards
-            </a>
-          </div>
-        </div>
+          <i className="fas fa-fw fa-cog"></i>
+          <span>Product</span>
+        </Link>
+        
       </li>
 
       <hr className="sidebar-divider d-none d-md-block" />
